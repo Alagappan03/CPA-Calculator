@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(270deg, #ff512f, #dd2476, #24c6dc, #5433ff, #20e2d7, #fc00ff, #ff512f);
+    background-size: 400% 400%;
+    animation: vibrantBG 16s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@keyframes vibrantBG {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    z-index: 1;
+    position: relative;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* --- Header Styles --- */
+.site-header {
+    width: 100%;
+    background: rgba(24, 24, 24, 0.92);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.09);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+.site-header h1 {
+    color: #ffb800;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.site-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 1.08rem;
+    transition: color 0.2s;
+}
+.site-header nav a:hover {
+    color: #ffb800;
+}
+
+.about-section {
+    background: rgba(35, 39, 47, 0.96);
+    border-radius: 1.2rem;
+    max-width: 500px;
+    margin: 2.5rem auto 0 auto;
+    padding: 2.2rem 2rem 2rem 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    color: #fff;
+    text-align: left;
+}
+.about-section h2 {
+    color: #24c6dc;
+    margin-bottom: 1rem;
+}
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0a66c2;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0.3rem;
+    transition: color 0.2s;
+}
+.linkedin-link:hover {
+    color: #004182;
+}
+.linkedin-link img {
+    margin-right: 6px;
+    width: 22px;
+    height: 22px;
+    filter: invert(39%) sepia(97%) saturate(2559%) hue-rotate(187deg) brightness(93%) contrast(101%);
+}
+
+/* --- Footer Styles --- */
+.site-footer {
+    width: 100%;
+    background: rgba(24, 24, 24, 0.96);
+    text-align: center;
+    padding: 1.2rem 0 1.1rem 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.09);
+}
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    color: #ffb800;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 0.7rem;
+    border: none;
+    background: #1a1d23;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    outline: none;
+    margin-bottom: 0.2rem;
+    transition: background 0.2s;
+}
+
+input[type="number"]:focus {
+    background: #23272f;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: #ffb800;
+    color: #23272f;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,184,0,0.15);
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #ffd966;
+    color: #181818;
+}
+
+.result {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #fff;
+    min-height: 2.2rem;
+}
