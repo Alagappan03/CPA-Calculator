@@ -42,5 +42,4 @@ The CPA Calculator is designed to be lightweight, responsive, and accessible, en
 
 Beyond functionality, the project emphasizes clarity, usability, and adaptability across devices. It reflects an approach where even simple tools are built with precision, scalability in mind, and a focus on delivering real value through thoughtful design.
 
-🔗 LinkedIn: https://www.linkedin.com/in/alagappanarumugam
 
