@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1>CPA Calculator</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#about" id="linkedin.com/in/alagappanarumugam">About</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="cpa-form">
+                <div class="input-group">
+    <label for="adSpend">Ad Spend <span id="currency-symbol">(₹)</span></label>
+    <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <input type="number" id="adSpend" name="adSpend" min="0" step="any" required style="flex: 1 1 auto;">
+        <select id="currency" name="currency" style="flex: 0 0 auto; min-width: 110px;">
+            <optgroup label="Popular">
+                <option value="INR">INR (₹)</option>
+                <option value="USD">USD ($)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="GBP">GBP (£)</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="JPY">JPY (¥)</option>
+                <option value="CNY">CNY (¥)</option>
+                <option value="SGD">SGD (S$)</option>
+                <option value="AED">AED (د.إ)</option>
+            </optgroup>
+            <optgroup label="Americas">
+                <option value="CAD">CAD (C$)</option>
+                <option value="AUD">AUD (A$)</option>
+            </optgroup>
+            <optgroup label="Europe & Africa">
+                <option value="RUB">RUB (₽)</option>
+                <option value="ZAR">ZAR (R)</option>
+            </optgroup>
+        </select>
+    </div>
+</div>
+                <div class="input-group">
+                    <label for="acquisitions">Number of Acquisitions</label>
+                    <input type="number" id="acquisitions" name="acquisitions" min="1" step="1" required>
+                </div>
+                <button type="submit">Calculate CPA</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+            <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+        <strong>CPA Calculator</strong> is a vibrant, user-friendly tool designed to help marketers and businesses calculate their Cost Per Acquisition (CPA) with ease. Our platform supports multiple currencies, making it accessible for users around the world. Simply enter your ad spend and number of acquisitions to get instant, accurate CPA results.
+    </p>
+    <p>
+        <strong>Founder:</strong> Alagappan
+    </p>
+</section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <span>&copy; 2025 CPA Calculator. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
